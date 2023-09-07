@@ -2,6 +2,9 @@
 
 
 This is a simple app that uses a machine learning model to predict the type of iris flower by asking for some features and displays the result.
+
+##The steps i took
+Read Documentation.docx to understand my approach. 
 ## Usage
 
 Install dependencies
