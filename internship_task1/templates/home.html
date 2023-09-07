@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" ... href="{{ url_for('static', filename='css/style.css') }}" />
+  <title>Home</title>
+</head>
+
+<body class="bg-slate-800 flex justify-center items-center min-h-screen">
+  <main class="flex flex-col mx-auto bg-gray-800  max-w-lg p-10 rounded-md shadow-lg ">
+    <h1 class="font-bold text-center text-white mb-3">IRIS FLOWER DETECTION</h1>
+
+    <form method="POST" action="{{url_for('home')}}" >
+      <div class="mb-6">
+        <label for="sepal_length" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sepal Length</label>
+        <input type="text" id="sepal_length" name="sepal_length"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="0.0" required>
+      </div>
+      <div class="mb-6">
+        <label for="sepal_width" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Sepal Width</label>
+        <input type="text" id="sepal_width" name="sepal_width"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="0.0" required>
+      </div>
+      <div class="mb-6">
+        <label for="petal_length" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Petal Length</label>
+        <input type="text" id="petal_length" name="petal_length"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="0.0" required>
+      </div>
+      <div class="mb-6">
+        <label for="petal_width" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Petal Width</label>
+        <input type="text" id="petal_width" name="petal_width"
+          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="0.0" required>
+      </div>
+
+      <div class="flex justify-center">
+        <button type="submit"
+          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Predict</button>
+      </div>
+    </form>
+
+
+  </main>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" ... href="{{ url_for('static', filename='css/style.css') }}" />
+  <title>Result</title>
+</head>
+
+<body class="bg-slate-800 flex justify-center items-center min-h-screen">
+  <main class="flex flex-col mx-auto max-w-lg p-10 rounded-md shadow-lg ">
+  {%if data ==0%}
+  <h1 class="font-bold text-center text-white mb-3">Iris Setosa</h1>
+  <img class="rounded-lg" src="static\iris_setosa.jpg">
+
+  {%endif%}
+  {%if data ==1%}
+  <h1 class="font-bold text-center text-white mb-3">Iris Versicolor</h1>
+  <img class="rounded-lg" src="static\iris_versicolor.jpg">
+
+
+
+  {%endif%}
+  {%if data ==2%}
+  <h1 class="font-bold text-center text-white mb-3">Iris Virginica</h1>
+  <img class="rounded-lg" src="static\iris_virginica.jpg">
+
+
+  {%endif%}
+</main>
+</body>
+
+</html>
