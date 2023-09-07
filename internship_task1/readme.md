@@ -1,10 +1,12 @@
 # IRIS Flower Predictor
 
 
-This is a simple app that uses a machine learning model to predict the type of iris flower by asking for some features and displays the result.
+
+This is a simple app that uses a machine learning model to predict the type of iris flower by asking for some features and displays the result.To understand my approach, please read the Documentation.docx
 
 ## Google Collab
 If you want to see the step by step approach and want to visualize the results, please run the google collab file.  
+
 ## Usage
 
 Install dependencies
