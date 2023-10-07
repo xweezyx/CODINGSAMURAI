@@ -9,3 +9,7 @@ A repository for my internship tasks which containing all the tasks that i have 
 
   
   Link 3:https://drive.google.com/file/d/1AFptnABE63wOWibbBObfVYJY4_Syz4rE/view?usp=sharing
+
+  Kindly download these files and paste them in the internship task 2 directory.
+
+  Thank you!
